@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nabilah Nur Azizah">
+<meta name="dcterms.date" content="2023-01-19">
+
+<title>Analisis Perkembangan Produktivitas Kakao Indonesia Periode 2016-2021</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Perkembangan Produktivitas Kakao Indonesia Periode 2016-2021</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nabilah Nur Azizah </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 19, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="images/image-492946043.png" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Ekspor adalah kegiatan atau aktivitas mengeluarkan barang dari dalam negeri ke luar negeri dengan mengikuti ketentuan dan peraturan yang berlaku. Komoditas kakao merupakan salah satu komoditas unggulan perkebunan Indonesia yang memegang peranan cukup penting dalam perekonomian Indonesia yakni sebagai penghasil devisa negara, sumber pendapatan petani, penciptaan lapangan kerja, mendorong agribisnis dan agroindustri serta pengembangan wilayah. Komoditas kakao sangat dibutuhkan di negara-negara di Eropa tentunya untuk pembuatan coklat. Namun, di negara Indonesia sendiri masyarakat mengonsumsi kakao masih cukup rendah yaitu rata-rata 0,4 kg/kapita/tahun, berbeda dengan negara Eropa yang memiliki nilai konsumsi kakao sebesar 8 kg/kapita/tahun.</p>
+<p>Produktivitas kakao di Indonesia bisa dikatakan cukup fluktuatif perkembangannya, padahal luas lahan yang tersedia cukup sesuai untuk komoditi ini. Menurut data statistik perkebunan tahun 2016 luas areal kakao Nasional dikatakan cukup luas yaitu mencapai 1.720.773 Ha. Namun, sangat disayangkan luas areal kakao setiap tahunnya mengalami penurunan, sehingga itu bisa menjadi salah satu penghambat untuk produksi dan produktivitas kakao dari negara Indonesia.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>Pembatasan suatu masalah digunakan untuk membatasi jangkauan proses yang akan dibahas agar tetap pada satu topik dan menghindari pelebaran pokok permasalahan. Peneliti menetapkan batasan masalah atas beberapa hal, yaitu membahas terkait produksi, produktivitas, dan luas areal Kakao di Indonesia.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<p>Bagaimana perkembangan produktivitas komoditi kakao di Indonesia periode 2016-2021?</p>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p>Untuk mengetahui perkembangan produktivitas kakao di Indonesia dari tahun ke tahun, dapat dilihat pula dari perkembangan produksinya dan juga luas areal yang ada di dalam negeri sehingga bisa dilihat seberapa besar untuk ekspornya.</p>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<ol type="1">
+<li>Perdagangan Internasional</li>
+</ol>
+<p>Perdagangan Internasional merupakan transaksi bisnis yang melibatkan lebih dari satu negara (Wahono Diphayana). Perdagangan Internasional popular diketahui yaitu dapat meningkatkan GDP atau PDB suatu negara. Peningkatan GDP atau GDP suatu negara biasa disebut dengan kegiatan ekspor impor. Kegiatan jual beli antar negara disebabkan adanya faktor-faktor di dalamnya, salah satunya kebutuhan untuk memperluas target pasar. Kegiatan dagang negara satu dengan negera lain tidak menerus dengan barang tetapi jasa. Sebuah negara yang memiliki SDM berkualitas bisa menjadi salah satunya.</p>
+<ol start="2" type="1">
+<li>Produksi</li>
+</ol>
+<p>Pengertian produksi menurut Zulian Yamit (2003:5) menyatakan bahwa kegiatan untuk mengolah input melalui proses transformasi atau pengubahan sedemikian rupa sehingga menjadi ouput yang berupa barang dan jasa. Produksi merupakan kegiatan untuk menghasilkan suatu barang atau jasa. Produksi berkaitan dengan kegiatan pokok ekonomi, yang sebagai arti kegiatan ekonomi adalah sebuah aktivitas yang dilakukan manusia untuk memenuhi kebutuhan hidupnya. Dalam arti lain, produksi dapat menciptakan atau menghasilkan nilai guna suatu barang.</p>
+<ol start="3" type="1">
+<li>Produktivitas</li>
+</ol>
+<p>Menurut Kussrianto dalam Sutrisno (2017:102), mengemukakan bahwa produktivitas adalah&nbsp;perbandingan antara hasil yang dicapai dengan peran serta tenaga kerja persatuan waktu.&nbsp;Produktivitas memliki arti dimana sebuah barang maupun jasa dapat menghasilkan lebih banyak output dengan waktu yang sedikit atau terbatas, apabila output yang dihasilkan semakin banyak tingkat produktivitas yang terjadi akan semakin tinggi pula. Faktor-faktor yang terjadi pada produktivitas sendiri sangat berpengaruh dari produksi yang dihasilkan pada sebuah barang maupun jasa.</p>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tahun</th>
+<th>Produksi</th>
+<th>Produktivitas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2016</td>
+<td>658.400</td>
+<td>798</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>585.200</td>
+<td>737</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>767.400</td>
+<td>729</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>734.700</td>
+<td>721</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>713.400</td>
+<td>723</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>706.500</td>
+<td>733</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"latihan.xlsx"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Y<span class="sc">~</span>X,<span class="at">data=</span>dat)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>Y,dat<span class="sc">$</span>X,<span class="at">ylab=</span><span class="st">"Produksi"</span>,<span class="at">xlab=</span><span class="st">"Produktivitas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+<p>Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analisis kuantitatif yang dilakukan dalam penelitian ini dengan melakukan regresi menggunakan metode yang dipilih adalah Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini bertujuan untuk mengetahui produksi, produktivitas, serta luas areal pada komoditi kakao di Indonesia dari tahun ke tahun. Rumus yang digunakan untuk regresi, sebagai berikut:</p>
+<p>Y= β<sub>0</sub> + 𝛽<sub>1</sub>X+ μ</p>
+<p>Keterangan:</p>
+<p>Y = Produktivitas kakao</p>
+<p>β<sub>0</sub> = Konstanta produktivitas</p>
+<p>β<sub>1</sub> = Konstanta produksi</p>
+<p>X = Produksi</p>
+<p>μ = error term</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<p><strong>1.Perkembangan Produksi Kakao Indonesia</strong></p>
+<p>Tabel 1. Perkembangan produksi kakao Indonesia tahun 2016-2021</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tahun</th>
+<th>Produksi (Ton)</th>
+<th>Perkembangan (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2016</td>
+<td>658.400</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>585.200</td>
+<td>-11,11</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>767.400</td>
+<td>31,13</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>734.700</td>
+<td>-4,26</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>713.400</td>
+<td>-2,89</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>706.500</td>
+<td>-0,96</td>
+</tr>
+<tr class="odd">
+<td>Rata-rata</td>
+<td></td>
+<td>1,985</td>
+</tr>
+</tbody>
+</table>
+<p>Sumber: Badan Pusat Statistik (data diolah)</p>
+<p>Berdasarkan tabel diatas, dapat dilihat perkembangan produksi kakao di Indonesia pada periode 2016-2021 mengalami fluktuasi. Pada tahun 2017, terlihat perkembangan produksi kakao sangat turun drastis yaitu hanya sebesar -11,11%. Namun, naik drastis juga ditahun berikutnya 2018, yaitu sebesar 31,13%. Tetapi ditahun-tahun berikutnya justru malah semakin menurun produksinya, hingga mencapai rata-rata 1,985.</p>
+<p><strong>2.Perkembangan Produktivitas Kakao Indonesia</strong></p>
+<p>Tabel 2. Perkembangan produktivitas kakao Indonesia tahun 2016-2021</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tahun</th>
+<th>Produktivitas (Kg/Ha)</th>
+<th>Perkembangan (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2016</td>
+<td>798</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>737</td>
+<td>-7,64</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>729</td>
+<td>-1,08</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>721</td>
+<td>-1,09</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>723</td>
+<td>0,27</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>733</td>
+<td>1,38</td>
+</tr>
+<tr class="odd">
+<td>Rata-rata</td>
+<td></td>
+<td>-1,36</td>
+</tr>
+</tbody>
+</table>
+<p>Sumber: Direktorat Jenderal Perkebunan (data diolah)</p>
+<p>Berdasarkan tabel diatas, dapat dilihat perkembangan produktivitas kakao Indonesia pada periode 2016-2021 mengalami fluktuasi sama seperti produksi kakaonya. Pada tahun 2017, perkembangan produktivitas sebesar -7,64% namun ditahun berikutnya justru menurun sangat drastis hingga mencapai -1,08% perkembangannya. Pada tahun 2020, perkembangannya hanya sebesar 0,27% yang meningkat dari tahun sebelumnya sebesar -1,09%. Di tahun 2021, produktivitas kakao meningkat cukup tinggi yaitu 1,38% padahal di tahun 2021 wabah virus COVID-19 sedang melonjak-lonjaknya namun produktivitas kakao untuk di ekspor justru semakin tinggi.</p>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis masalah</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Variabel</th>
+<th>Coeficient</th>
+<th>Std.Error</th>
+<th>t. value</th>
+<th>Prob</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept</td>
+<td>1353905.6</td>
+<td>753327.1</td>
+<td>1.797</td>
+<td>0.147</td>
+</tr>
+<tr class="even">
+<td>X</td>
+<td>-891.2</td>
+<td>1017.1</td>
+<td>-0.876</td>
+<td>0.430</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th>R-Squared</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adjusted R-Squared</td>
+<td>-0.04872</td>
+</tr>
+<tr class="even">
+<td>F-Statistic</td>
+<td>0.7677</td>
+</tr>
+<tr class="odd">
+<td>Prob (F-Statistic)</td>
+<td>0.4304</td>
+</tr>
+</tbody>
+</table>
+<p>Produksi kakao tidak berpengaruh terhadap produktivitas. Ditunjukkan dengan dilihat dari probabilitas X (Produktivitas) yang tidak berpengaruh. Dimana produksi sering menjadi faktor yang dapat mendorong naik dan turunnya produktivitas. Nilai koefisien produksi sebesar 1353905.6 yang berarti kenaikan perubahan produksi tidak berpengaruh terhadap produktivitas. Dengan hasil ini maka dapat disimpulkan bahwa produksi kakao tidak berpengaruh terhadap produktivitas.</p>
+<p>Hasil regresinya adalah</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"latihan.xlsx"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Y<span class="sc">~</span>X,<span class="at">data=</span>dat)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Y ~ X, data = dat)
+
+Residuals:
+      1       2       3       4       5       6 
+  15675 -111889   63182   23352    3834    5846 
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept) 1353905.6   753327.1   1.797    0.147
+X              -891.2     1017.1  -0.876    0.430
+
+Residual standard error: 65860 on 4 degrees of freedom
+Multiple R-squared:  0.161, Adjusted R-squared:  -0.04872 
+F-statistic: 0.7677 on 1 and 4 DF,  p-value: 0.4304</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<p>Berdasarkan data hasil analisis kuantitatif yang telah dilakukan, setelah diamati produksi komoditi kakao tidak berpengaruh terhadap perkembangan produktivitasnya. DImana produksi seharusnya bisa menjadi nilai guna suatu barang atau jasa namun, pada hal ini produksi tidak berpengaruh atau berarti tidak menjadi nilai guna untuk produktivitasnya.</p>
+</section>
+<section id="referensi" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referensi"><span class="header-section-number">6</span> Referensi</h2>
+<p><em>Produksi Kakao Indonesia Terus Menurun 3 Tahun Terakhir | Databoks</em>. (n.d.). Retrieved January 19, 2023, from <a href="https://databoks.katadata.co.id/datapublish/2022/11/01/produksi-kakao-indonesia-terus-menurun-3-tahun-terakhir" class="uri">https://databoks.katadata.co.id/datapublish/2022/11/01/produksi-kakao-indonesia-terus-menurun-3-tahun-terakhir</a></p>
+<p>Media, K. C. (2022, January 29). <em>Apa Itu Ekspor: Pengertian, Jenis, Tujuan, dan Manfaatnya Halaman all</em>. KOMPAS.com. <a href="https://money.kompas.com/read/2022/01/29/152419826/apa-itu-ekspor-pengertian-jenis-tujuan-dan-manfaatnya" class="uri">https://money.kompas.com/read/2022/01/29/152419826/apa-itu-ekspor-pengertian-jenis-tujuan-dan-manfaatnya</a></p>
+<p><em>Kementerian Pertanian Direktorat Jenderal Perkebunan » Buku Statistik Perkebunan 2020-2022</em>. (n.d.). Retrieved January 19, 2023, from <a href="https://ditjenbun.pertanian.go.id/?publikasi=buku-statistik-perkebunan-2020-2022" class="uri">https://ditjenbun.pertanian.go.id/?publikasi=buku-statistik-perkebunan-2020-2022</a></p>
+<p><em>Kementerian Pertanian Direktorat Jenderal Perkebunan » Cokelatku Budayaku Indonesiaku: TUMBUHKAN BUDAYA KORPORASI PEKEBUN KAKAO</em>. (n.d.). Retrieved January 19, 2023, from <a href="https://ditjenbun.pertanian.go.id/cokelatku-budayaku-indonesiaku-tumbuhkan-budaya-korporasi-pekebun-kakao/" class="uri">https://ditjenbun.pertanian.go.id/cokelatku-budayaku-indonesiaku-tumbuhkan-budaya-korporasi-pekebun-kakao/</a></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
